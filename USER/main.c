@@ -60,6 +60,9 @@ int main(void)
 		if(keyword)
 		LCD_ShowNum(10, 70, keyword, 2, 16);   
 		printf("%d\r\n", keyword);
+		                                
+		Angle = Get_Adc1_Average(11,16);
+		LCD_ShowNum(106,30, Angle, 3, 16);
 
 	} 
 }

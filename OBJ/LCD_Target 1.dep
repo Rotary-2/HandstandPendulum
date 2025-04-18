@@ -1,6 +1,6 @@
 Dependencies for Project 'LCD', Target 'Target 1': (DO NOT MODIFY !)
 CompilerVersion: 5050106::V5.05 update 1 (build 106)::ARMCC
-F (.\main.c)(0x68021431)(--c99 -c --cpu Cortex-M3 -g -O0 --apcs=interwork -I ..\HARDWARE\LED -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\USER -I ..\STM32F10x_FWLib\inc -I ..\CORE -I ..\HARDWARE\LCD -I ..\HARDWARE\ADC -I ..\HARDWARE\ENCODE -I ..\HARDWARE\MOTO -I ..\HARDWARE\TIM -I ..\HARDWARE\CONTROL -I ..\HARDWARE\encoder -I ..\HARDWARE\key_board-ID:\software\Keil_v5\ARM\Pack\Keil\STM32F1xx_DFP\2.3.0\Device\Include-D__UVISION_VERSION="537" -DSTM32F10X_HD -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER-o ..\obj\main.o --depend ..\obj\main.d)
+F (.\main.c)(0x680219BC)(--c99 -c --cpu Cortex-M3 -g -O0 --apcs=interwork -I ..\HARDWARE\LED -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\USER -I ..\STM32F10x_FWLib\inc -I ..\CORE -I ..\HARDWARE\LCD -I ..\HARDWARE\ADC -I ..\HARDWARE\ENCODE -I ..\HARDWARE\MOTO -I ..\HARDWARE\TIM -I ..\HARDWARE\CONTROL -I ..\HARDWARE\encoder -I ..\HARDWARE\key_board-ID:\software\Keil_v5\ARM\Pack\Keil\STM32F1xx_DFP\2.3.0\Device\Include-D__UVISION_VERSION="537" -DSTM32F10X_HD -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER-o ..\obj\main.o --depend ..\obj\main.d)
 I (..\HARDWARE\LED\led.h)(0x532ACAF6)
 I (..\SYSTEM\sys\sys.h)(0x550F951C)
 I (..\USER\stm32f10x.h)(0x4D783CB6)
