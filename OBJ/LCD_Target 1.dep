@@ -1,6 +1,6 @@
 Dependencies for Project 'LCD', Target 'Target 1': (DO NOT MODIFY !)
 CompilerVersion: 5050106::V5.05 update 1 (build 106)::ARMCC
-F (.\main.c)(0x680219BC)(--c99 -c --cpu Cortex-M3 -g -O0 --apcs=interwork -I ..\HARDWARE\LED -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\USER -I ..\STM32F10x_FWLib\inc -I ..\CORE -I ..\HARDWARE\LCD -I ..\HARDWARE\ADC -I ..\HARDWARE\ENCODE -I ..\HARDWARE\MOTO -I ..\HARDWARE\TIM -I ..\HARDWARE\CONTROL -I ..\HARDWARE\encoder -I ..\HARDWARE\key_board-ID:\software\Keil_v5\ARM\Pack\Keil\STM32F1xx_DFP\2.3.0\Device\Include-D__UVISION_VERSION="537" -DSTM32F10X_HD -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER-o ..\obj\main.o --depend ..\obj\main.d)
+F (.\main.c)(0x68025670)(--c99 -c --cpu Cortex-M3 -g -O0 --apcs=interwork -I ..\HARDWARE\LED -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\USER -I ..\STM32F10x_FWLib\inc -I ..\CORE -I ..\HARDWARE\LCD -I ..\HARDWARE\ADC -I ..\HARDWARE\ENCODE -I ..\HARDWARE\MOTO -I ..\HARDWARE\TIM -I ..\HARDWARE\CONTROL -I ..\HARDWARE\encoder -I ..\HARDWARE\key_board-ID:\software\Keil_v5\ARM\Pack\Keil\STM32F1xx_DFP\2.3.0\Device\Include-D__UVISION_VERSION="537" -DSTM32F10X_HD -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER-o ..\obj\main.o --depend ..\obj\main.d)
 I (..\HARDWARE\LED\led.h)(0x532ACAF6)
 I (..\SYSTEM\sys\sys.h)(0x550F951C)
 I (..\USER\stm32f10x.h)(0x4D783CB6)
@@ -41,7 +41,7 @@ I (..\HARDWARE\ADC\adc.h)(0x6801EEE7)
 I (..\HARDWARE\ENCODE\encoder.h)(0x6801F49E)
 I (..\HARDWARE\MOTO\motor.h)(0x6801FEE6)
 I (..\HARDWARE\TIM\tim.h)(0x6801F49E)
-I (..\HARDWARE\key_board\key_board.h)(0x680215BB)
+I (..\HARDWARE\key_board\key_board.h)(0x68021DC9)
 F (.\stm32f10x_it.c)(0x4EBEACB2)(--c99 -c --cpu Cortex-M3 -g -O0 --apcs=interwork -I ..\HARDWARE\LED -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\USER -I ..\STM32F10x_FWLib\inc -I ..\CORE -I ..\HARDWARE\LCD -I ..\HARDWARE\ADC -I ..\HARDWARE\ENCODE -I ..\HARDWARE\MOTO -I ..\HARDWARE\TIM -I ..\HARDWARE\CONTROL -I ..\HARDWARE\encoder -I ..\HARDWARE\key_board-ID:\software\Keil_v5\ARM\Pack\Keil\STM32F1xx_DFP\2.3.0\Device\Include-D__UVISION_VERSION="537" -DSTM32F10X_HD -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER-o ..\obj\stm32f10x_it.o --depend ..\obj\stm32f10x_it.d)
 I (stm32f10x_it.h)(0x4D99A428)
 I (stm32f10x.h)(0x4D783CB6)
@@ -305,7 +305,7 @@ F (..\HARDWARE\TIM\tim.h)(0x6801F49E)()
 F (..\HARDWARE\CONTROL\control.c)(0x6802041E)(--c99 -c --cpu Cortex-M3 -g -O0 --apcs=interwork -I ..\HARDWARE\LED -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\USER -I ..\STM32F10x_FWLib\inc -I ..\CORE -I ..\HARDWARE\LCD -I ..\HARDWARE\ADC -I ..\HARDWARE\ENCODE -I ..\HARDWARE\MOTO -I ..\HARDWARE\TIM -I ..\HARDWARE\CONTROL -I ..\HARDWARE\encoder -I ..\HARDWARE\key_board-ID:\software\Keil_v5\ARM\Pack\Keil\STM32F1xx_DFP\2.3.0\Device\Include-D__UVISION_VERSION="537" -DSTM32F10X_HD -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER-o ..\obj\control.o --depend ..\obj\control.d)
 F (..\HARDWARE\CONTROL\control.h)(0x680200F3)()
 F (..\HARDWARE\key_board\key_board.c)(0x680215BB)(--c99 -c --cpu Cortex-M3 -g -O0 --apcs=interwork -I ..\HARDWARE\LED -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\USER -I ..\STM32F10x_FWLib\inc -I ..\CORE -I ..\HARDWARE\LCD -I ..\HARDWARE\ADC -I ..\HARDWARE\ENCODE -I ..\HARDWARE\MOTO -I ..\HARDWARE\TIM -I ..\HARDWARE\CONTROL -I ..\HARDWARE\encoder -I ..\HARDWARE\key_board-ID:\software\Keil_v5\ARM\Pack\Keil\STM32F1xx_DFP\2.3.0\Device\Include-D__UVISION_VERSION="537" -DSTM32F10X_HD -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER-o ..\obj\key_board.o --depend ..\obj\key_board.d)
-I (..\HARDWARE\key_board\key_board.h)(0x680215BB)
+I (..\HARDWARE\key_board\key_board.h)(0x68021DC9)
 I (..\SYSTEM\sys\sys.h)(0x550F951C)
 I (..\USER\stm32f10x.h)(0x4D783CB6)
 I (..\CORE\core_cm3.h)(0x4D523B5A)

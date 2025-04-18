@@ -8,6 +8,7 @@
 #include "motor.h"
 #include "tim.h"
 #include "key_board.h"
+#define buffer_size 220
 
 unsigned keyword;
 
@@ -16,8 +17,10 @@ unsigned keyword;
 //技术支持：www.openedv.com
 //广州市星翼电子科技有限公司 
 
-
 u16 Angle;
+u16 angle_buf[buffer_size] = {0};
+u16 temp;
+u8 Angleindex = 0;
 int main(void)
 { 
 	u8 lcd_id[12];			//存放LCD ID字符串		 
@@ -63,6 +66,35 @@ int main(void)
 		                                
 		Angle = Get_Adc1_Average(11,16);
 		LCD_ShowNum(106,30, Angle, 3, 16);
-
+	
+		temp = angle_buf[Angleindex];
+		angle_buf[Angleindex] = Angle / 10 - 200;
+		printf("angle_buf[%d] = %d\r\n",Angleindex, angle_buf[Angleindex]);
+		Angleindex = (Angleindex + 1) % buffer_size;
+		
+		LCD_DrawLine(10, 100, 11, 310);    
+		LCD_DrawLine(10, 309, 230, 310);
+		
+//		if (Angleindex == 0) LCD_Fill(10, 100, 230, 310, WHITE);
+		for(int i = Angleindex + 1; i < buffer_size; i++) 
+		{	
+        int x = i - Angleindex - 1 + 10;
+        int y = 310 - angle_buf[i];
+				int last_y = 310 - angle_buf[i - 1];
+				LCD_Fast_DrawPoint(x, last_y, WHITE);   
+				LCD_Fast_DrawPoint(buffer_size, angle_buf[0], WHITE); 			
+				LCD_Fast_DrawPoint(x, y, BLACK);    
+				if (Angleindex == buffer_size - 1) LCD_Fast_DrawPoint(x, y, WHITE);   
+    }
+		for(int i = 0; i < Angleindex; i++) 
+		{
+        int x = i + buffer_size - Angleindex + 10;
+        int y = 310 - angle_buf[i];
+				int last_y = 310 - angle_buf[i - 1];
+				LCD_Fast_DrawPoint(x, last_y, WHITE);     
+				LCD_Fast_DrawPoint(buffer_size, angle_buf[0], WHITE); 	
+        LCD_Fast_DrawPoint(x, y, BLACK);     
+				if (Angleindex == buffer_size - 1) LCD_Fast_DrawPoint(x, y, WHITE);   
+    }
 	} 
 }
